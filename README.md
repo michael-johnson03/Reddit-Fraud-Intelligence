@@ -309,3 +309,4 @@ MIT — see [`LICENSE`](LICENSE).
 Built as the individual technical contribution within a 5-person capstone team. Team roles were Project Lead, Data Lead, Model/AI Lead, Product/Engineering Lead, and Documentation & Communication Lead. The seven non-Reddit ingestion pipelines (FinCEN, FTC, FBI, IC3, BleepingComputer, Outseer, PYMNTS), the shared canonical schema, the fraud detector notebook, and the orchestrator were built by teammates and are not included in this repository.
 
 Sponsor sign-off received for this sanitized public release.
+
