@@ -1,0 +1,71 @@
+run_date,theme,post_count,theme_summary_text,model_name,generated_at_utc
+2026-04-08,BEC_Business_Email_Compromise,109,"Pattern:
+Multiple reports describe unauthorized transactions on business bank accounts, primarily through the Zelle payment system, following the compromise of email accounts or phone numbers. The fraudsters use the legitimate business contact information on record to authorize transfers to unknown recipients, often to crypto wallets.
+
+Targets & Impact:
+Business professionals with multiple bank accounts are the primary targets, resulting in significant financial losses. The compromise of email accounts and phone numbers exposes not only the financial information but also potentially sensitive business information.
+
+Watch signals: insufficient signal data",Mistral-7B-Instruct-v0.2,2026-04-08T17:13:26.939159+00:00
+2026-04-08,Phishing_Smishing,99,"Pattern:
+Multiple reports indicate an increase in phishing and smishing scams, with scammers using various tactics such as fake emails, text messages, and LinkedIn messages to deceive individuals. Some scams involve requests for personal information or the installation of malware, while others use threats or offers to manipulate recipients.
+
+Targets & Impact:
+The targets of these scams are individuals, with older or less tech-savvy individuals being particularly vulnerable. The impact of these scams includes financial loss, identity exposure, and the installation of malware on devices.
+
+Watch signals: phishing, malware, social engineering, clicked a link, phishing email, trojan",Mistral-7B-Instruct-v0.2,2026-04-08T17:15:27.884968+00:00
+2026-04-08,Payment_Scams_P2P,77,"Pattern:
+Multiple reports indicate the prevalence of payment scams under the guise of various promotions and giveaways, with scammers using fake phone numbers, email addresses, and websites to deceive victims. These scams involve requests for personal information or payments, often disguised as legitimate opportunities or offers.
+
+Targets & Impact:
+Individuals, including business professionals and new account holders, are targeted in these scams, resulting in financial losses and potential identity exposure. Scammers exploit trust and curiosity to gain access to personal information or bank accounts.
+
+Watch signals: zelle, paypal, refund scam",Mistral-7B-Instruct-v0.2,2026-04-08T17:15:14.285446+00:00
+2026-04-08,Identity_Theft,74,"Pattern:
+Multiple reports describe instances of identity theft, where individuals have had their personal information, including name, date of birth, address, and Social Security number, used to attempt opening credit cards, loans, and accessing bank accounts. The fraudsters were able to bypass some verification systems but were ultimately unsuccessful due to additional security measures.
+
+Targets & Impact:
+The primary targets of this fraud type are individuals whose personal information has been compromised, resulting in potential financial loss and identity exposure. The impact includes unauthorized account access, credit card applications, and loan applications.
+
+Watch signals: identity theft, ssn, fraud alert, social security number, someone opened, credit freeze",Mistral-7B-Instruct-v0.2,2026-04-08T17:14:28.629644+00:00
+2026-04-08,General_Scam,28,"Pattern:
+Multiple reports indicate the prevalence of crypto scams, with scammers posing as representatives of legitimate crypto networks or exchanges to lure victims into sending funds or personal information. These scams often use social media platforms, such as Discord, to reach potential victims.
+
+Targets & Impact:
+Individuals who are active in online crypto communities are at risk of financial loss due to these scams. Scammers may promise to provide free crypto in exchange for a small initial investment or personal information, ultimately leading to significant financial losses for victims.
+
+Watch signals: scam, is this a scam, scammer, fraud",Mistral-7B-Instruct-v0.2,2026-04-08T17:14:12.828178+00:00
+2026-04-08,Investment_Scam,25,"Pattern:
+Multiple reports indicate suspicious activity on crypto option trading platforms, where the price of cryptocurrencies experiences significant and unexpected reversals at the last second of trades, resulting in unexplained profits for the platform.
+
+Targets & Impact:
+Investors using these platforms are at risk of financial loss due to potential manipulation of trading prices. In some cases, users have been unable to withdraw their funds from certain websites, leading to additional financial harm.
+
+Watch signals: send money, dating app, ponzi, whatsapp group",Mistral-7B-Instruct-v0.2,2026-04-08T17:14:44.277131+00:00
+2026-04-08,Crypto_Fraud,22,"Pattern:
+Multiple reports describe a coordinated crypto scam operation involving fraudulent actors posing as trusted individuals or support agents, using social media platforms to lure victims into investing in crypto schemes. Victims are often approached through social media groups and are led to believe they are receiving legitimate investment advice or bonuses, only to have their funds stolen once larger payments are made.
+
+Targets & Impact:
+Individuals and their crypto wallets are the primary targets of this scam, resulting in significant financial losses. In some cases, victims' accounts are taken over and used to further propagate the scam.
+
+Watch signals: crypto scam, coinbase, pig butchering, seed phrase, ethereum, crypto wallet",Mistral-7B-Instruct-v0.2,2026-04-08T17:13:42.732118+00:00
+2026-04-08,ATO_Account_Takeover,15,"Pattern:
+Multiple reports indicate a pattern of unauthorized attempts to gain access to social media accounts, specifically Instagram, Facebook, and WhatsApp. The actors appear to be using phone numbers to create new accounts or trigger verification codes. Some reports suggest that the actors may have obtained the phone numbers through data breaches or phishing scams.
+
+Targets & Impact:
+The primary targets of this fraud type are social media users, with potential impact including unauthorized account creation, account takeover, and identity exposure. Financial loss is not explicitly mentioned in the reports, but the actors may use compromised accounts to engage in further fraudulent activities.
+
+Watch signals: 2fa, hacked account",Mistral-7B-Instruct-v0.2,2026-04-08T17:13:15.732543+00:00
+2026-04-08,Tech_Support_Scam,15,"Pattern:
+Multiple reports describe instances of deceptive tactics used by tech support companies, specifically Restoro and Reimage, to trick users into paying for unnecessary computer repairs. These tactics often involve pop-up messages that claim to identify computer problems and pressure users into purchasing services.
+
+Targets & Impact:
+Individuals are targeted with the promise of resolving computer issues, resulting in financial loss due to unwarranted payments. In some cases, personal information may also be exposed during the interaction with these companies.
+
+Watch signals: popup, pop up",Mistral-7B-Instruct-v0.2,2026-04-08T17:15:39.092430+00:00
+2026-04-08,Data_Breach,5,"Pattern:
+Multiple reports indicate the use of unauthorized data tracking and collection through supposedly secure verification processes. In one instance, LinkedIn developers were accused of injecting malicious code to track personal data after account verification. In another case, a lender requested paystub verification through a third-party API integration, potentially exposing sensitive payroll information.
+
+Targets & Impact:
+Individuals and organizations are targeted, resulting in potential financial loss and identity exposure through unauthorized data collection and tracking.
+
+Watch signals: security incident, data leak, dark web",Mistral-7B-Instruct-v0.2,2026-04-08T17:13:58.504609+00:00

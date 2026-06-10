@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+venv/
+.venv/
+env/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Pipeline runtime data (DO NOT COMMIT)
+# These are partitioned outputs that contain real Reddit posts.
+# Use docs/sample_theme_summaries.csv as the reference sample instead.
+data/raw/
+data/curated/
+data/scored/
+data/summaries/
+state/
+
+# Local model caches
+*.gguf
+*.bin
+hf_cache/
+.cache/
+
+# Logs
+*.log
