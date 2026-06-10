@@ -1,0 +1,12 @@
+pandas
+pyarrow
+PyYAML
+python-dateutil
+requests
+transformers
+torch
+sentencepiece
+accelerate
+bitsandbytes
+sentence-transformers
+faiss-cpu

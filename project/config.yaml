@@ -1,0 +1,52 @@
+data_root: ./data
+state_path: ./state/reddit_state.json
+
+subreddits:
+  # Core fraud & scam
+  - Scams
+  - ScamNumbers
+  - Scammed
+  - fraudprevention
+
+  # Identity & account security
+  - IdentityTheft
+  - cybersecurity
+  - SocialEngineering
+  - phishing
+
+  # Payment & banking
+  - personalfinance
+  - Banking
+  - CreditCards
+  - zelle
+
+  # Crypto
+  - CryptoScams
+  - BitcoinScams
+  - ethereum
+  - CryptoMoonShots
+
+  # Tech support & billing scams
+  - antivirus
+  - techsupport
+
+  # Elder & military fraud
+  - Veterans
+  - Military
+  - ElderLaw
+  - AgingParents
+  - CaregiverSupport
+
+  # Data breach & privacy
+  - netsec
+  - privacy
+
+  # Consumer & marketplace fraud
+  - legaladvice
+  - mildlyinfuriating
+  - Frugal
+
+rss:
+  feed_type: new
+  per_subreddit_limit: 25
+  throttle_seconds: 1.5
