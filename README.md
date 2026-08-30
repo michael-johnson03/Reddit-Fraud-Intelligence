@@ -65,10 +65,11 @@ state/reddit_state.json                      # Cross-run dedup: all seen post UR
 
 ## Quickstart
 
-### Prerequisites
+- ### Prerequisites
 - **Google Colab with A100 GPU runtime** for Mistral-7B + sentence-transformers in memory together. Smaller GPUs require model substitution (see [Adapting to other compute](#adapting-to-other-compute)).
 - Google Drive mounted (for data partition storage)
 - Python 3.12
+- **[Optional] Ollama with the `phi3` model**, for the dashboard's "Cross Intelligence" chatbot tab only. Install from [ollama.com](https://ollama.com/), then run `ollama pull phi3` and `ollama serve`. All other dashboard tabs work without this.
 
 ### Install
 ```bash
@@ -247,7 +248,7 @@ The classification logic, scoring weights, FAISS retrieval, Mistral synthesis, a
 - **No incremental embedding updates.** Each run re-embeds the full corpus from scratch. Fine at ~600 posts; needs incremental updates past ~10k.
 - **No production observability.** No metrics, no traces, no error monitoring. Acceptable for graduate capstone; mandatory before any production deployment.
 - **`retrieve_theme_evidence.py` is unused by the CLI.** It was an earlier evidence-retrieval module that got superseded by inline per-theme retrieval in `theme_summaries.py`. Kept in the repo for reference/comparison but not on the active code path.
-
+- **Chatbot tab requires local Ollama.** The "Cross Intelligence" tab's Q&A assistant calls a local Ollama server (`phi3` model) at `localhost:11434`. Without it running, that one tab shows a clear setup message; the other three dashboard tabs are unaffected.
 ---
 
 ## Adapting to other compute
