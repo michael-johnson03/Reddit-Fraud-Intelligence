@@ -10,3 +10,7 @@ accelerate
 bitsandbytes
 sentence-transformers
 faiss-cpu
+streamlit
+plotly
+wordcloud
+matplotlib
