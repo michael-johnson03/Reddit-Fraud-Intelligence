@@ -99,6 +99,41 @@ Flags:
 | `--top-k N` | 8 | Top-k chunks retrieved per theme for synthesis |
 | `--min-posts-per-theme N` | 3 | Minimum posts before a theme gets a synthesized brief |
 
+### View the dashboard
+
+The Streamlit dashboard reads from consolidated files (`reddit_posts_all.parquet`,
+`reddit_theme_summaries.parquet`) rather than the raw per-run partitions directly,
+so after running the pipeline, refresh those files first:
+
+```bash
+cd project
+python consolidate_for_dashboard.py
+```
+
+This unions every `run_date=` partition under `data/scored/reddit/` into a single
+deduplicated `reddit_posts_all.parquet`, and copies the most recent run's theme
+summaries into `reddit_theme_summaries.parquet`. Run it again any time after a new
+pipeline run to pull in the latest data.
+
+Then launch the dashboard:
+
+```bash
+streamlit run app.py
+```
+
+This opens at `localhost:8501`. If you've already launched Streamlit in this session,
+restart it (`Ctrl+C`, then re-run) after calling `consolidate_for_dashboard.py` —
+`app.py`'s data loaders are cached per-session and won't pick up a refreshed file
+automatically.
+
+### Building multi-day history
+
+Reddit's RSS feeds only return currently live posts — there's no way to backfill past
+dates. To see trend data accumulate across multiple days, re-run the pipeline (with
+`--date` set to the actual current date each time) on a recurring basis — daily via cron
+or Task Scheduler, or manually. Each run adds only newly-seen posts (deduplicated via
+`state/reddit_state.json`), and `consolidate_for_dashboard.py` merges them into the
+cumulative dashboard file.
 ---
 
 ## Production runs (real evidence)
