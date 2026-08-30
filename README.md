@@ -239,7 +239,7 @@ reddit-fraud-intelligence/
 ├── project/
 │   ├── config.yaml                              # Pipeline configuration
 │   ├── requirements.txt
-│   ├── app_final.py                             # Streamlit dashboard
+│   ├── app.py                                   # Streamlit dashboard
 │   └── fraud_reddit_sentiment/
 │       ├── __init__.py
 │       ├── cli.py                               # Single entry point
